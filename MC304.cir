@@ -1,0 +1,24 @@
+mc304.cir
+*
+* SPICE netlist for the Motorola MC304 ECL circuit
+*
+
+*
+* Models
+*
+.import 2N3904.mod
+.import 1N4148.mod
+*
+* Circuit netlist
+*
+.subckt mc304 vbb  vee  vcc  tp
+*             vbb  vee  vcc  tp
+r1     vcc     tp              300
+q1     vcc     tp      vbb     2N3904
+r3     vbb     vee             2000
+r2     tp      01              2550
+d1     01      02              1N4148
+d2     02      vee             1N4148
+.ends mc304
+
+.end
