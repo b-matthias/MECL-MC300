@@ -3,7 +3,7 @@ MC301.cir
 * SPICE netlist for the Motorola MC301 ECL circuit
 *
 *  5-input gate, output OR and NOR
-* ref page 2-9
+* ref page 2-12
 *
 * Models
 *
@@ -11,8 +11,8 @@ MC301.cir
 *
 * Circuit netlist
 *
-.subckt MC301 vbb  vee  vcc or nor in1 in2 in3 in4 in5
-*             vbb  vee  vcc  tp
+.subckt MC301 vbb vee vcc or nor in1 in2 in3 in4 in5
+*             1   2   3   4  5   6   7   8   9   10
 rc1    vcc     n01             290
 rc2    vcc     n02             315
 q1     n01     in1     n03     2N3904
