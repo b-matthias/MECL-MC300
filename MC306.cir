@@ -24,7 +24,7 @@ re1    explo   vee             1240
 q5     vcc     exphi   nor     2N3904
 q6     vcc     n02     or      2N3904
 ro1    nor     vee             2000
-r02    or      vee             2000
+ro2    or      vee             2000
 .ends MC306
 
 .end
