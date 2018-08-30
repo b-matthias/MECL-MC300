@@ -1,0 +1,35 @@
+MC309.cir
+*
+* SPICE netlist for the Motorola MC309 ECL circuit
+*
+* Dual 2-input gates, output NOR
+* see also MC310 and MC311
+* ref page 2-14
+*
+* Models
+*
+.import 2N3904.mod
+*
+* Circuit netlist
+*
+.subckt MC309 vbb vee vcc nc nor1 nor2 in1 in2 in3 in4
+*             1   2   3   4  5    6    7   8   9   10
+*             vbb  vee  vcc  tp
+rc1    vcc     n01             290
+rc2    vcc     n02             290
+rc3    vcc     n04             150
+q1     n01     in1     n03     2N3904
+q2     n01     in2     n03     2N3904
+q3     n04     vbb     n03     2N3904
+q4     n04     vbb     n05     2N3904
+q5     n02     in3     n05     2N3904
+q6     n02     in4     n05     2N3904
+re1    n03     vee             1240
+re2    n05     vee             1240
+q7     vcc     n02     nor2    2N3904
+q8     vcc     n01     nor1    2N3904
+ro1    nor1    vee             2000
+ro2    nor2    vee             2000
+.ends MC309
+
+.end
