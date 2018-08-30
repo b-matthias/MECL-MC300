@@ -1,8 +1,9 @@
-mc304.cir
+MC304.cir
 *
 * SPICE netlist for the Motorola MC304 ECL circuit
 *
-
+* Bias circuit required for other MECL circuits (aka Vbb)
+* ref page 2-29
 *
 * Models
 *
