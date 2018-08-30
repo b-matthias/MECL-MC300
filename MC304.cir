@@ -3,7 +3,7 @@ MC304.cir
 * SPICE netlist for the Motorola MC304 ECL circuit
 *
 * Bias circuit required for other MECL circuits (aka Vbb)
-* this circuit is specified to drive up to 25 logic eolements 
+* this circuit is specified to drive up to 25 logic eolements
 * ref page 2-29
 *
 * Models
@@ -13,8 +13,8 @@ MC304.cir
 *
 * Circuit netlist
 *
-.subckt MC304 vbb  vee  vcc  tp
-*             vbb  vee  vcc  tp
+.subckt MC304 vbb vee vcc tp
+*             1   2   3   4
 r1     vcc     tp              300
 q1     vcc     tp      vbb     2N3904
 r3     vbb     vee             2000
