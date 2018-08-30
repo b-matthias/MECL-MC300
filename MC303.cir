@@ -1,0 +1,47 @@
+MC303.cir
+*
+* SPICE netlist for the Motorola MC303 ECL circuit
+*
+* Half-adder with SUM, CARRY, NOR outputs
+* ref page 2-26
+*
+* as a half-adder
+*  inputs are: 7 = ~B, 8 = ~A, 9 = B, 10 = A
+*  outputs are: sum = (A * ~B) + (~A * B)
+*               carry = (A * B)
+*               nor = ~(A + B)
+*
+* as a R-S Flip-Flop
+*  inputs are: 7 = ~clock, 8 = ~set, 9 = reset, 10 = false {connected}
+*  outputs are: sum = false {connected to pin 10 input}
+*               carry = (set * clock)
+*               nor = true
+*
+* Models
+*
+.import 2N3904.mod
+*
+* Circuit netlist
+*
+.subckt MC303 vbb vee vcc sum nor carry in1 in2 in3 in4
+*             1   2   3   4   5   6     7   8   9   10
+rc1    vcc     n01             290
+rc2    vcc     n02             290
+rc3    vcc     n04             300
+q1     n01     in2     n03     2N3904
+q2     n01     in1     n03     2N3904
+q3     n04     vbb     n03     2N3904
+q4     n04     vbb     n05     2N3904
+q5     n02     in4     n05     2N3904
+q6     n02     in3     n05     2N3904
+re1    n03     vee             1240
+re2    n05     vee             1240
+q7     vcc     n01     carry   2N3904
+q8     vcc     n04     sum     2N3904
+q9     vcc     n02     nor     2N3904
+ro1    carry   vee             2000
+ro2    sum     vee             2000
+ro3    nor     vee             2000
+.ends MC303
+
+.end
