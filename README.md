@@ -40,7 +40,7 @@ Nevertheless, I believe that this syntax should work for all SPICE 3
 
 My first job after "higher education" was working on the UNIVAC 1100/90 at the Sperry manufacturing facility. As a matter of course, at that time, Unisys was being created with the merger of Sperry and Burroughs.
 The UNIVAC 1100/90 and Unisys 2200/100 (and other versions if this system) employed ECL logic gates for the Central Processor Unit.
-The CPU circuit boards (52 in total) used a complex set of many layers and large edge connectors on three sides to achieve a very high density of logic circuits.
-This high-density ECL PCB required a water-cooled heat-sink plate sandwiched between two PCBs placed face-to-face for cooling.
+The CPU circuit boards (52 in total) used a complex set of many layers and large edge connectors on three sides to achieve a very high density of logic circuits; which Sperry terms High Performance Packaging (HPP).
+This high-density logic required liquid cooling using a cold plate sandwiched between two PCBs placed face-to-face.
 While the UNIVAC 1100/90 did not use MECL circuits or packages; the concept is similar, and the MECL family has much better documentation.
 All of this to say: I have a fondness for ECL logic and systems built with ECL logic.
