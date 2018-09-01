@@ -1,0 +1,24 @@
+MC355.cir
+*
+* SPICE netlist for the Motorola MC355 ECL circuit
+*
+* 5-input expander
+* see also MC352, MC352A MC356, MC357 and MC365
+* ref page 2-60
+*
+* Models
+*
+.import 2N3904.mod
+*
+* Circuit netlist
+*
+.subckt MC355 nc nc nc elo ehi in1 in2 in3 in4 in5
+*             1  2  3  4   5   6   7   8   9   10
+q1     ehi     in1     elo     2N3904
+q2     ehi     in2     elo     2N3904
+q3     ehi     in3     elo     2N3904
+q4     ehi     in4     elo     2N3904
+q5     ehi     in5     elo     2N3904
+.ends MC355
+
+.end
