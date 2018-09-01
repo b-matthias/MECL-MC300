@@ -3,7 +3,7 @@ MC306.cir
 * SPICE netlist for the Motorola MC306 ECL circuit
 *
 * Expandable 3-input gate, output OR and NOR
-* see also MC307
+* see also MC307 and MC305
 * ref page 2-9
 *
 * Models
@@ -12,16 +12,16 @@ MC306.cir
 *
 * Circuit netlist
 *
-.subckt MC306 vbb  vee  vcc or nor in1 in2 in3 exphi explo
-*             vbb  vee  vcc  tp
-rc1    vcc     exphi           290
+.subckt MC306 vbb vee vcc or nor in1 in2 in3 ehi elo
+*             1   2   3   4  5   6   7   8   9   10
+rc1    vcc     ehi             290
 rc2    vcc     n02             315
-q1     exphi   in1     explo   2N3904
-q2     exphi   in2     explo   2N3904
-q3     exphi   in3     explo   2N3904
-q4     n02     vbb     explo   2N3904
-re1    explo   vee             1240
-q5     vcc     exphi   nor     2N3904
+q1     ehi     in1     elo     2N3904
+q2     ehi     in2     elo     2N3904
+q3     ehi     in3     elo     2N3904
+q4     n02     vbb     elo     2N3904
+re1    elo     vee             1240
+q5     vcc     ehi     nor     2N3904
 q6     vcc     n02     or      2N3904
 ro1    nor     vee             2000
 ro2    or      vee             2000
