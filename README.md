@@ -2,7 +2,7 @@
 
 #### Project
 
-This the goal of this project is to enumerate each MECL circuit in a SPICE circuit/sub-circuit file. A secondary goal is to provide sample circuits from the application notes.
+The goal of this project is to enumerate each MECL circuit in a SPICE circuit/sub-circuit file. A secondary goal is to provide sample circuits from the application notes.
 
 #### Introduction
 
