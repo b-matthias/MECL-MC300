@@ -6,8 +6,8 @@ The goal of this project is to enumerate each MECL circuit in a SPICE circuit/su
 
 #### Introduction
 
-In 1962, Motorola introduced a new family of logic circuits called MECL. In the following years, Motorola continued to introduce subsequent versions of the MECL family. Hence, this (first) family of circuits are sometimes called MECL I.
-In later versions of Motorola manuals (e.g. MECL System Design Book, Forth Edition), Motorola uses five names when refering to the MECL  logic family: MECL I, MECL II, MECL III, MECL 10K, and MECL 10KH.
+In 1962, Motorola introduced a new family of logic circuits called MECL. In the following years, Motorola continued to introduce subsequent versions of the MECL family. Hence, this (first) family of circuits are sometimes called MECL I.   
+In later versions of Motorola manuals (e.g. MECL System Design Book, Forth Edition), Motorola uses five names when refering to the MECL  logic family: MECL I, MECL II, MECL III, MECL 10K, and MECL 10KH.   
 This project will focus on MECL I or MC300/MC350 series circuits.
 
 #### MECL MC300 Series
@@ -27,10 +27,9 @@ Other manuals refer to the metal can package as TO-5, the 10-lead flat package a
 
 #### MECL circuits in SPICE
 
-At the time of this document I am using a (partial) copy of the Motorola MECL Data Book, [Archive.org bitsavers collective](https://ia801902.us.archive.org/25/items/bitsavers_motoroladactronics02MECL_15757786/02_MECL.pdf)
-The MECL family is detailed in section 2 of this book, and this PDF starts at section 2.
-This book appears to be published on or after 1968.
-
+At the time of this document I am using a (partial) copy of the Motorola MECL Data Book, [Archive.org bitsavers collective](https://ia801902.us.archive.org/25/items/bitsavers_motoroladactronics02MECL_15757786/02_MECL.pdf)   
+The MECL family is detailed in section 2 of this book, and this PDF starts at section 2.   
+This book appears to be published on or after 1968.   
 Also, Application Note IC-11 written by Emory Garth has good information about the implementation of MECL logic blocks. A copy can be found in Google Books, [American Microelectronics Data Annual 1964–65](https://books.google.com/books?id=tdCjBQAAQBAJ&lpg=PA250&ots=P0it3LPHe_&dq=emory%20garth%20motorola&pg=PA250#v=onepage&q=emory%20garth%20motorola&f=false)
 Page 250.
 
@@ -38,7 +37,7 @@ The date of published information can be roughly established based on the MC312A
 
 #### SPICE version
 
-I current choice for SPICE is MacSpice v?.? on my MacBook Pro, which I use to test each circuit and/or sub-circuit.
+MY current choice for SPICE is MacSpice v?.? on my MacBook Pro, which I use to test each circuit and/or sub-circuit.
 Nevertheless, I believe that this syntax should work for all SPICE based on Berkley SPICE.
 
 #### Personal Note
