@@ -15,14 +15,14 @@ This project will focus on MECL I or MC300/MC350 series circuits.
 The family of the MECL logic circuits are available as two different series, with part numbers which differ by "50" (e.g. MC303 and MC353 or MC311 and MC361).
 The MC300 series is "extended" operating temperature range -55 to +125 (degrees C).
 The MC350 series is "commercial" operating temperature range 0 to +75 (degrees C).
-There are some idiosyncrasies to the part numbering schemes. I will try to identify each of these situations in separate markdown files for each part number, as needed.
+There are some idiosyncrasies to the part numbering schemes. I will try to identify each of these situations in individual markdown files for each part number, as needed.
 
 #### Package Case Styles
 
 MECL is offered in 10-lead metal can, and 10-lead flat package.
 The flat package is designated with an "F" suffix on the ordering part number, and "G" for the metal can.
 One exception is a 14-lead flat package, also using the suffix "F" for ordering.
-Again, there are some idiosyncrasies to the part numbering schemes. I will try to identify each of these situations in separate markdown files for each part number, as needed.
+Again, there are some idiosyncrasies to the part numbering schemes. I will try to identify each of these situations in individual markdown files for each part number, as needed.
 The 1966 Motorola Semiconductor Handbook (page 13-59) details the packages as: 10-pin metal (CASE 71), 12-pin metal (CASE 98), 10-pin flat package (CASE 72), and 12-pin flat package (CASE 83).
 Other manuals refer to the metal can package as TO-5, the 10-lead flat package as TO-91, and the 14-lead flat package as TO-86.
 
