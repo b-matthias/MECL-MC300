@@ -1,19 +1,23 @@
 # MECL-MC300
 
+#### Project
+
+This the goal of this project is to enumerate each MECL circuit in a SPICE circuit/sub-circuit file. A secondary goal is to provide sample circuits from the application notes.
+
 #### Introduction
 
-This the goal of this project is to enumerate each MECL circuit from the 1968 Allied catalog in a SPICE circuit/sub-circuit file, and to provide sample circuits from application notes.
-In 1962, Motorola introduced a new family of logic circuits called MECL. Motorola continued to introduce subsequent versions of the MECL family.
-In later versions of Motorola manuals (e.g. MECL System Design Book, Forth Edition), Motorola uses five logic family names of MECL I, MECL II, MECL III, MECL 10K, and MECL 10KH.
+In 1962, Motorola introduced a new family of logic circuits called MECL. In the following years, Motorola continued to introduce subsequent versions of the MECL family. Hence, this (first) family of circuits are sometimes called MECL I.
+In later versions of Motorola manuals (e.g. MECL System Design Book, Forth Edition), Motorola uses five names when refering to the MECL  logic family: MECL I, MECL II, MECL III, MECL 10K, and MECL 10KH.
+This project will focus on MECL I or MC300/MC350 series circuits.
 
-#### Series
+#### MECL MC300 Series
 
 The family of the MECL logic circuits are available as two different series, with part numbers which differ by "50" (e.g. MC303 and MC353 or MC311 and MC361).
 The MC300 series is "extended" operating temperature range -55 to +125 (degrees C).
 The MC350 series is "commercial" operating temperature range 0 to +75 (degrees C).
 There are some idiosyncrasies to the part numbering schemes. I will try to identify each of these situations in separate markdown files for each part number, as needed.
 
-#### Packages
+#### Package Case Styles
 
 MECL is offered in 10-lead metal can, and 10-lead flat package.
 The flat package is designated with an "F" suffix on the ordering part number, and "G" for the metal can.
@@ -35,7 +39,7 @@ The date of published information can be roughly established based on the MC312A
 
 #### SPICE version
 
-I am currently using MacSpice locally on my MacBook Pro, which I use to test each circuit and sub-circuit.
+I current choice for SPICE is MacSpice v?.? on my MacBook Pro, which I use to test each circuit and/or sub-circuit.
 Nevertheless, I believe that this syntax should work for all SPICE based on Berkley SPICE.
 
 #### Personal Note
@@ -45,4 +49,4 @@ The UNIVAC 1100/90 and Unisys 2200/100 (and other versions if this system) emplo
 The CPU circuit boards (52 in total) used a complex set of many layers and large edge connectors on three sides to achieve a very high density of logic circuits; which Sperry terms High Performance Packaging (HPP).
 This high-density logic required liquid cooling using a cold plate sandwiched between two PCBs placed face-to-face.
 While the UNIVAC 1100/90 did not use MECL circuits or packages; the concept is similar, and the MECL family has much better documentation.
-All of this to say: I have a fondness for ECL logic, and systems built with ECL logic.
+All of this to say: I have a fondness for ECL logic, and complex logic systems based on ECL logic.
