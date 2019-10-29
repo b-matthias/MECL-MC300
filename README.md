@@ -19,9 +19,8 @@ There are some idiosyncrasies to the part numbering schemes. I will try to ident
 
 #### Package Case Styles
 
-MECL is offered in 10-lead metal can, and 10-lead flat package.
-The flat package is designated with an "F" suffix on the ordering part number, and "G" for the metal can.
-One exception is a 14-lead flat package, also using the suffix "F" for ordering.
+MECL is offered in 10-lead metal can ("G" suffix), and 10-lead flat package ("F" suffix).
+One exception is a 14-lead flat package, also using the "F" suffix for ordering.
 Again, there are some idiosyncrasies to the part numbering schemes. I will try to identify each of these situations in individual markdown files for each part number, as needed.
 The 1966 Motorola Semiconductor Handbook (page 13-59) details the packages as: 10-pin metal (CASE 71), 12-pin metal (CASE 98), 10-pin flat package (CASE 72), and 12-pin flat package (CASE 83).
 Other manuals refer to the metal can package as TO-5, the 10-lead flat package as TO-91, and the 14-lead flat package as TO-86.
