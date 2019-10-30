@@ -1,0 +1,28 @@
+MC357.cir
+*
+* SPICE netlist for the Motorola MC357 ECL circuit
+*
+* Expandable 3-input gate, output OR and NOR
+* see also MC356 and MC355
+* ref page 2-9
+*
+* Models
+*
+.import 2N3904.mod
+*
+* Circuit netlist
+*
+.subckt MC357 vbb vee vcc or nor in1 in2 in3 ehi elo
+*             1   2   3   4  5   6   7   8   9   10
+rc1    vcc     ehi             290
+rc2    vcc     n02             315
+q1     ehi     in1     elo     2N3904
+q2     ehi     in2     elo     2N3904
+q3     ehi     in3     elo     2N3904
+q4     n02     vbb     elo     2N3904
+re1    elo     vee             1240
+q5     vcc     ehi     nor     2N3904
+q6     vcc     n02     or      2N3904
+.ends MC357
+
+.end
