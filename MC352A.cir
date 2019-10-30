@@ -12,7 +12,7 @@ MC352A.cir
 * Circuit netlist
 *
 .subckt MC352A ehi vee vcc nq q set1 set2 elo res1 res2
-*             1   2   3   4  5  6    7    8   9    10
+*              1   2   3   4  5 6    7    8   9    10
 rc1    vcc     n01             220
 rc2    vcc     ehi             220
 q1     vcc     n01     nq      2N3904
