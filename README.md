@@ -6,13 +6,13 @@ The goal of this project is to enumerate each MECL circuit in a SPICE circuit/su
 
 #### Introduction
 
-In 1962, Motorola introduced a new family of logic circuits called MECL. In the following years, Motorola continued to introduce subsequent versions of the MECL family. Hence, this (first) family of circuits are sometimes called MECL I.   
+In 1962, Motorola introduced a new family of logic circuits called MECL. In the following years, Motorola continued to introduce subsequent versions of the MECL family. Hence, this (first) family of circuits called MECL I.   
 In later versions of Motorola manuals (e.g. MECL System Design Book, Forth Edition), Motorola uses five names when refering to the MECL  logic family: MECL I, MECL II, MECL III, MECL 10K, and MECL 10KH.   
-This project will focus on MECL I or MC300/MC350 series circuits.
+This project will focus on MECL I, or the MC300/MC350 series circuits.
 
 #### MECL MC300 Series
 
-The family of the MECL logic circuits are available as two different series, with part numbers which differ by "50" (e.g. MC303 and MC353 or MC311 and MC361).  
+The family of the MECL logic circuits are available as two different series, with part numbers which differ by "50" (e.g. MC303 and MC353).  
 The MC300 series is "extended" operating temperature range -55 to +125 (degrees C).  
 The MC350 series is "commercial" operating temperature range 0 to +75 (degrees C).  
 There are some idiosyncrasies to the part numbering schemes. I will try to identify each of these situations in individual markdown files for each part number, as needed.
@@ -27,13 +27,11 @@ Other manuals refer to the metal can package as TO-5, the 10-lead flat package a
 
 #### MECL circuits in SPICE
 
-At the time of this document I am using a (partial) copy of the Motorola MECL Data Book, [Archive.org bitsavers collective](https://ia801902.us.archive.org/25/items/bitsavers_motoroladactronics02MECL_15757786/02_MECL.pdf)   
-The MECL family is detailed in section 2 of this book, and this PDF starts at section 2.   
-This book appears to be published on or after 1968.   
+At the time of this document I am using a (partial) copy of the Motorola Integrated Circuit Data Book, [Archive.org bitsavers collective](https://ia801902.us.archive.org/25/items/bitsavers_motoroladactronics02MECL_15757786/02_MECL.pdf)   
+The MECL family is detailed in section 2 of this book, and my PDF copy starts at section 2.   
+
 Also, Application Note IC-11 written by Emory Garth has good information about the implementation of MECL logic blocks. A copy can be found in Google Books, [American Microelectronics Data Annual 1964–65](https://books.google.com/books?id=tdCjBQAAQBAJ&lpg=PA250&ots=P0it3LPHe_&dq=emory%20garth%20motorola&pg=PA250#v=onepage&q=emory%20garth%20motorola&f=false)
 Page 250.
-
-The date of published information can be roughly established based on the MC312A (or MC362A) logic circuit, which first appears in the 1968 version of the Allied Electronics for Industry catalog \#670.
 
 #### SPICE version
 
