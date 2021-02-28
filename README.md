@@ -6,9 +6,11 @@ The goal of this project is to enumerate each MECL circuit in a SPICE circuit/su
 
 #### Introduction
 
-In 1962, Motorola introduced a new family of logic circuits called MECL. In the following years, Motorola continued to introduce subsequent versions of the MECL family. Hence, this (first) family of circuits called MECL I.   
-In later versions of Motorola manuals (e.g. MECL System Design Book, Forth Edition), Motorola uses five names when refering to the MECL  logic family: MECL I, MECL II, MECL III, MECL 10K, and MECL 10KH.   
-This project will focus on MECL I, or the MC300/MC350 series circuits.
+This family of high speed logic integrated circuits was developed by Motorola in the 1960's. ECL stands for Emitter-Coupled Logic and the Motorola series was known as MECL.
+In later versions of Motorola manuals (e.g. MECL System Design Book, Forth Edition), Motorola uses five names when refering to the MECL logic family.
+There were 5 series of MECL IC's from Motorola: MECL I 1962-1977 30MHz switching and 8ns gate propagation delay; MECL II 1966-1979 70MHz switching and 4ns gate propagation delay (which increased to 180MHz and 2ns over the years); MECL III 1968-19?? 500MHz switching and 1ns gate propagation delay; MECL 10K (1971-) and MECL 10KH (1981-) were further improvements.
+
+This project will focus on MECL I, a.k.a. the MC300/MC350 series circuits.
 
 #### MECL MC300 Series
 
